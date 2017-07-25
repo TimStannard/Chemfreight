@@ -15,6 +15,13 @@ body {
 	overflow: auto;
 }
 
+::selection {
+  background: grey; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: grey; /* Gecko Browsers */
+}
+
 /*header*/
 
 #header, #header-content, #ftr-content-wrapper, .home-banner-content, .banner-item{
@@ -44,7 +51,7 @@ body {
 #header-content {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1500px;
+	max-width: 1450px;
 	box-sizing: border-box;
 	padding: 0px 0px 0px 25px;
 }
@@ -59,7 +66,7 @@ padding-right: 25px;
 /*background-image: url("../img/texture-header.png");*/
 }
 
-.nav-btn {
+/*.nav-btn {
 	color: white;
 	height: 38px;
 	width: auto;
@@ -78,22 +85,38 @@ padding-right: 25px;
 	-webkit-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.16), inset 0px 4px 20px 0px rgba(255, 255, 255, 0.123);
     -moz-box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.16), inset 0px 4px 20px 0px rgba(255, 255, 255, 0.23);
     box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.16), inset 0px 4px 20px 0px rgba(255, 255, 255, 0.23);
+}*/
+.nav-btn {
+	color: black;
+	height: 28px;
+	width: auto;
+	min-width: 100px;
+	padding: 1px 24px 1px 24px;
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: Roboto;
+	border: none;
+	border-radius: 0px;
+	margin-right: 5px;
+	margin-top: 36px;
+	font-weight: 500;
+	transition: all 0.1s ease-in;
+	border-left: solid 4px #3F61A1;
 }
 
 .nav-btn:hover{
 	cursor: pointer;
-	background-color: #ED3626;
-
+	color: white;
+	border-left: solid 4px #ED3626;
+	background-color: #3F61A1;
+	border-radius: 0px 3px 3px 0px;
 
 }
 
 .btn-active {
-	background-color: #ED3626;
-	color: white;
-	padding: 3px 28px 3px 22px;
-		-webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.13), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
-    -moz-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.13), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
-    box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.13), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
+	color: #ED3626;
+	border-left: solid 4px #ED3626;
 
 }
 
@@ -135,7 +158,7 @@ padding-right: 25px;
 	background-image: url("../img/banner-home2.jpg");
 	background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom; 
+    background-position: top left; 
 	background-color: black;
 	color: white;
 	font-family: Roboto Condensed;
@@ -149,7 +172,7 @@ padding-right: 25px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1435px;
-	padding: 110px 0px 194px 120px;
+	padding: 85px 0px 175px 108px;
 
 }
 
@@ -170,7 +193,8 @@ padding-right: 25px;
 h1 {
 	line-height: 45px;
 	font-size: 42px;
-	font-weight: 300;
+	font-weight: 600;
+	padding-bottom:20px;
 }
 h2 {
 	font-size: 27px;
@@ -178,12 +202,26 @@ h2 {
 }
 
 /*red banners*/
+.border-top {
+	height:0px;
+	width:100%;
+	border-bottom: 1px dashed #C63B2B;
+}
+.border-bottom {
+	height:0px;
+	width:100%;
+	border-bottom: 1px dashed #C63B2B;
+
+}
+.margin-top-fix {
+	margin-top:-2px;
+}
+.margin-btm-fix {
+	margin-top:-1px;
+}
 
 .red-banner {
-	/*background-color: red;*/
-	/*background-image: url("../img/red-texture.png");*/
 	opacity: 1;
-	/*height: 236px;*/
 	width: 100%;
 	position: relative;
 	z-index: 10; 
@@ -192,33 +230,29 @@ h2 {
 
 .red-banner-o{
 background-image: url("../img/red-texture.png");
- height: 256px;
-	-webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.23), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
+ height: 275px;
+ overflow: hidden;
+-webkit-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.23), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
     -moz-box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.23), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
     box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.23), inset 0px -4px 20px 0px rgba(255, 255, 255, 0.13);
 }
 
 .home-banner-content {
-	opacity: 1;
-	height: 260px;
-	/*width: 1420px;*/
-	width:100%;
-	min-width: 1600px;
+	width:1296px;
 	margin: 0 auto;
-	margin-left: 320px;
-    padding: 44px 0px 40px 0px;
-    /*background-color: black;*/
+    padding: 50px 0px 0px 0px;
     font-family: Roboto Condensed;
     font-weight: 500;
     font-size: 19px;
+    height: 220px;
 }
 
 .banner-item {
 	display: inline-block;
 	width: 30%;
-	max-width: 245px;
+	max-width: 265px;
 	/*height: auto;*/
-	margin-right: 5%;
+	margin-right: 55px;
 }
 
 
@@ -237,17 +271,6 @@ background-image: url("../img/red-texture.png");
 	font-weight: 500;
 }
 
-.shade-red-banner {
-	margin-top: -4px;
-	width: 100%;
-	height: 26px;
-	/*opacity: 0.12;*/
-	opacity: 0;
-	background: -moz-linear-gradient(bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-}
 /*main content 2*/
 
 #second-main-content {
@@ -312,6 +335,7 @@ background-image: url("../img/red-texture.png");
 	border-radius: 50px;
 	border: solid 1px rgba(255,255,255, 0.3);
 	background-color: rgba(255,255,255, 0.03);
+	overflow: hidden;
 }
 .icon-feature i{
 margin-top: 18px;
@@ -321,7 +345,10 @@ margin-top: 18px;
 margin-top: 22px!important;
 margin-right: -5px;
 }
-
+.margin-storage{
+margin-top: 23px!important;
+/*font-size:px!important;*/
+}
 .margin-truck{
 margin-right: 5px;
 }
@@ -345,11 +372,12 @@ margin-right: 5px;
 	/*padding-top:px;*/
 	width:300px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 #feature-services-button{
 	text-transform: uppercase;
-	padding: 6px 20px 6px 20px;
+	padding: 9px 34px 9px 34px;
 	border-radius: 2px;
 	border: 1px solid white;
 	font-family: Roboto;
@@ -361,6 +389,37 @@ margin-right: 5px;
 }
 
 #feature-services-button:hover{
+	color:black;
+	background-color:white;
+	cursor: pointer;
+}
+
+.second-banner {
+	text-align: center;
+	font-size: 28px;
+	color: white;
+}
+.second-banner-msg{
+	font-size: 24px;
+}
+
+.banner-button{
+	text-transform: uppercase;
+	padding: 9px 34px 9px 34px;
+	border-radius: 2px;
+	border: 1px solid white;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 16px;
+	transition: all 0.1s ease-in;
+	width: 100px;
+	margin: 0 auto;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.banner-button:hover{
+
 	color:black;
 	background-color:white;
 	cursor: pointer;
@@ -381,7 +440,7 @@ margin-right: 5px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1435px;
-	padding: 50px 100px 50px 100px;
+	padding: 84px 100px 50px 100px;
 }
 
 .ftr-header{
