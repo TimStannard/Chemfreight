@@ -33,6 +33,11 @@ b {
 .block {
 	display: block;
 }
+
+.margin-zero-center{
+	margin-left: 0px!important;
+	text-align: center!important;
+}
 /*header*/
 
 #header, #header-content, #ftr-content-wrapper, .home-banner-content, .banner-item{
@@ -332,7 +337,7 @@ background-image: url("../img/red-texture.png");
 .feature-item {
 	 vertical-align:top;
 	display: inline-block;
-	width: 250px;
+	width: 270px;
 	margin-right: 20px;
 	margin-left:20px;
 
