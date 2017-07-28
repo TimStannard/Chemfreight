@@ -81,7 +81,7 @@ b {
 #nav-links {
 	letter-spacing: 4px;
 height: 98px;
-padding-right: 25px;
+padding-right: 45px;
 /*background-image: url("../img/texture-header.png");*/
 }
 
@@ -194,8 +194,8 @@ box-shadow: inset 0px -1px 75px 0px rgba(0,0,0,0.35);
 }
 
 .red-pointer-home {
-    width: 7px;
-    height: 34px;
+  	width: 7px;
+    height: 36px;
     position: relative;
     top: 68px;
     left: -20px;
@@ -468,7 +468,7 @@ margin-right: 5px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1435px;
-	padding: 84px 100px 50px 100px;
+	padding: 84px 100px 84px 100px;
 }
 
 .ftr-header{
@@ -514,13 +514,13 @@ margin-right: 0px;
 
 .h1-sm {
 	margin-top: 27px;
-	font-size:26px;
+	font-size:22px;
 	text-transform: uppercase;
 }
 
 .pointer-sm {
-	height: 30px;
-	top: 64px;
+    height: 26px;
+    top: 63px;
 }
 
 .wrapper-sm {
@@ -530,7 +530,7 @@ margin-right: 0px;
 }	
 
 .who-we-are-banner{
-		background-image: url("../img/who-we-are-banner.jpg")!important;
+		background-image: url("../img/banner-who-we-are2.jpg")!important;
 		background-position:50% 40%!important; 
 }
 
@@ -539,24 +539,6 @@ margin-right: 0px;
 	overflow: auto;
 	background-color: #ffffff;
 	background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
-}
-
-#chemfreight-intro{
-	padding:50px 0px 24px 0px;
-	width: auto;
-	margin: 0 auto;
-	text-align: center;
-	opacity:0.7;
-
-}
-#chemfreight-intro img {
-	background-color: white;
-	padding:20px 35px 20px 35px;
-	 -webkit-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.27);
-    -moz-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.27);
-	box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.27);
-	border: solid 1px #E9E9E9;
-	border-radius: 5px;
 }
 .intro-aside {
 	font-size: 22px;
@@ -572,7 +554,7 @@ margin-right: 0px;
 	height: auto;
 	overflow: hidden;
 	box-sizing: border-box;
-	padding: 35px 25px 25px 25px;
+	padding: 90px 25px 25px 25px;
 	margin: 0 auto;
 
 }
@@ -599,7 +581,7 @@ margin-right: 0px;
     -webkit-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
     -moz-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
 	box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
-	border: solid 1px #E9E9E9;
+	border: solid 1px #eaeaea;
 }
 
 .wwa-box-subdesc{
@@ -614,9 +596,9 @@ margin-right: 0px;
 	width: 350px;
 	height:250px;
 	line-height: 30px;
-	    -webkit-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.02);
-    -moz-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.02);
-	box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.02);
+	    -webkit-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.04);
+    -moz-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.04);
+	box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.04);
 }
 
 .wwa-icon {
@@ -694,7 +676,7 @@ margin-right: 0px;
 }
 
 .h2-sm{
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
 	margin-top: -26px;
     margin-left: -23px;
@@ -762,4 +744,50 @@ margin-right: 0px;
 	color: #3F61A1;
 	width: 20px;
 	text-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
+}
+
+/*our services*/
+
+.our-services-banner{
+		background-image: url("../img/banner-our-services2.jpg")!important;
+		background-position:50% 40%!important; 
+}
+
+#os-container {
+	font-family: Roboto;
+	width:1400px;
+	height: auto;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 90px 25px 90px 25px;
+	margin: 0 auto;
+	/*background-color: black;*/
+
+}
+
+.os-box{
+	background-color: white;
+	box-sizing: border-box;
+	border-radius: 0px 0px 5px 5px;
+	width:100%;
+	height: 350px;
+    -webkit-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
+    -moz-box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
+	box-shadow: 4px 4px 12px -2px rgba(0,0,0,0.17);
+	border: solid 1px #eaeaea;
+}
+
+.os-item-header{
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 3px;
+	font-weight: 500;
+	color: black;
+	padding: 20px;
+	background-color: #FAFAFA;
+}
+
+.os-item-header i {
+	padding-left: 5px;
+	padding-right: 5px;
 }
