@@ -529,7 +529,7 @@ $( "#sidebar" ).simplerSidebar( {
  events: {
         callbacks: {
             animation: {
-                freezePage: true
+                freezePage: false
             }
         }
     }
